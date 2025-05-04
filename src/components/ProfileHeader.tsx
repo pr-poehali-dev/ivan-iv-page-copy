@@ -17,18 +17,17 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ activeTab, setActiveTab }
       {/* Cover image */}
       <div 
         className="w-full h-48 bg-cover bg-center" 
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1546555661-d0d9a413aded?w=800&auto=format&fit=crop")' }}
-      >
-      </div>
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1546555661-d0d9a413aded?w=800&auto=format&fit=crop&q=80")' }}
+      />
       
       {/* Profile info */}
       <div className="flex p-4 md:p-6 relative">
         <div className="absolute -top-16 left-6 border-4 border-white rounded-full">
           <Avatar className="h-32 w-32">
             <img 
-              src="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop" 
+              src="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop&q=80" 
               alt="Иван Грозный"
-              className="object-cover"
+              className="object-cover w-full h-full"
             />
           </Avatar>
         </div>
@@ -87,7 +86,7 @@ const ProfileHeader: React.FC<ProfileHeaderProps> = ({ activeTab, setActiveTab }
             className="rounded-none px-4 py-2" 
             onClick={() => setActiveTab('communities')}
           >
-            <Icon name="UsersRound" className="mr-2 h-4 w-4" />
+            <Icon name="Users" className="mr-2 h-4 w-4" />
             Сообщества
           </Button>
         </div>

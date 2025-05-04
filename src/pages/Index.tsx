@@ -8,46 +8,46 @@ import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 const photos = [
   {
     id: 1,
-    url: 'https://images.unsplash.com/photo-1549737221-bcd871da79c3?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1549737221-bcd871da79c3?w=400&auto=format&fit=crop&q=80',
     alt: 'Троицкий собор'
   },
   {
     id: 2,
-    url: 'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1596484552834-6a58f850e0a1?w=400&auto=format&fit=crop&q=80',
     alt: 'Кремль'
   },
   {
     id: 3,
-    url: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1513326738677-b964603b136d?w=400&auto=format&fit=crop&q=80',
     alt: 'Церковь Василия Блаженного'
   },
   {
     id: 4,
-    url: 'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1547448415-e9f5b28e570d?w=400&auto=format&fit=crop&q=80',
     alt: 'Палаты'
   },
   {
     id: 5,
-    url: 'https://images.unsplash.com/photo-1590430676517-1594f94e01c9?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1590430676517-1594f94e01c9?w=400&auto=format&fit=crop&q=80',
     alt: 'Успенский собор'
   },
   {
     id: 6,
-    url: 'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=400&auto=format&fit=crop',
+    url: 'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=400&auto=format&fit=crop&q=80',
     alt: 'Казанский собор'
   }
 ];
 
 const friends = [
-  { id: 1, name: 'Алексей Адашев', avatar: 'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=60&auto=format&fit=crop' },
-  { id: 2, name: 'Андрей Курбский', avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=60&auto=format&fit=crop' },
-  { id: 3, name: 'Малюта Скуратов', avatar: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=60&auto=format&fit=crop' }
+  { id: 1, name: 'Алексей Адашев', avatar: 'https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=60&auto=format&fit=crop&q=80' },
+  { id: 2, name: 'Андрей Курбский', avatar: 'https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=60&auto=format&fit=crop&q=80' },
+  { id: 3, name: 'Малюта Скуратов', avatar: 'https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?w=60&auto=format&fit=crop&q=80' }
 ];
 
 const communities = [
-  { id: 1, name: 'Опричнина', members: 1565, avatar: 'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=60&auto=format&fit=crop' },
-  { id: 2, name: 'Стрелецкое войско', members: 25000, avatar: 'https://images.unsplash.com/photo-1551893134-55fe5225e040?w=60&auto=format&fit=crop' },
-  { id: 3, name: 'Боярская дума', members: 150, avatar: 'https://images.unsplash.com/photo-1549942514-bf87b7b8cd99?w=60&auto=format&fit=crop' }
+  { id: 1, name: 'Опричнина', members: 1565, avatar: 'https://images.unsplash.com/photo-1579613832125-5d34a13ffe2a?w=60&auto=format&fit=crop&q=80' },
+  { id: 2, name: 'Стрелецкое войско', members: 25000, avatar: 'https://images.unsplash.com/photo-1551893134-55fe5225e040?w=60&auto=format&fit=crop&q=80' },
+  { id: 3, name: 'Боярская дума', members: 150, avatar: 'https://images.unsplash.com/photo-1549942514-bf87b7b8cd99?w=60&auto=format&fit=crop&q=80' }
 ];
 
 const Index = () => {
@@ -58,7 +58,7 @@ const Index = () => {
       <div className="col-span-2">
         <PostCard
           author="Иван IV Васильевич (Грозный)"
-          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop"
+          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop&q=80"
           date="25 апреля 1560"
           content="Сегодня был подписан важный указ о расширении земель. Русское царство становится ещё больше! Присоединены новые земли на востоке."
           likes={1547}
@@ -67,17 +67,17 @@ const Index = () => {
         />
         <PostCard
           author="Иван IV Васильевич (Грозный)"
-          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop"
+          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop&q=80"
           date="14 марта 1559"
           content="Кто хочет побеседовать со мной о государственных делах? Пишите в личные сообщения. Особенно интересуют вопросы судебной реформы."
-          image="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b9?w=800&auto=format&fit=crop"
+          image="https://images.unsplash.com/photo-1577495508326-19a1b3cf65b9?w=800&auto=format&fit=crop&q=80"
           likes={2438}
           comments={531}
           shares={157}
         />
         <PostCard
           author="Иван IV Васильевич (Грозный)"
-          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop"
+          avatar="https://images.unsplash.com/photo-1562873658-43f3d34dab55?w=400&auto=format&fit=crop&q=80"
           date="2 февраля 1558"
           content="Начинаем Ливонскую войну! Всем боярам явиться на сбор. Будем расширять земли на запад, нужен выход к Балтийскому морю для торговли."
           likes={3254}

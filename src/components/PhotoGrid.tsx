@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { AspectRatio } from '@/components/ui/aspect-ratio';
 
 interface Photo {
   id: number;
@@ -25,14 +24,12 @@ const PhotoGrid: React.FC<PhotoGridProps> = ({ photos }) => {
       <CardContent>
         <div className="grid grid-cols-3 gap-2">
           {photos.map((photo) => (
-            <div key={photo.id} className="rounded-md overflow-hidden">
-              <AspectRatio ratio={1 / 1}>
-                <img
-                  src={photo.url}
-                  alt={photo.alt}
-                  className="object-cover w-full h-full cursor-pointer hover:opacity-90 transition-opacity"
-                />
-              </AspectRatio>
+            <div key={photo.id} className="rounded-md overflow-hidden h-24 md:h-32">
+              <img
+                src={photo.url}
+                alt={photo.alt}
+                className="object-cover w-full h-full cursor-pointer hover:opacity-90 transition-opacity"
+              />
             </div>
           ))}
         </div>
